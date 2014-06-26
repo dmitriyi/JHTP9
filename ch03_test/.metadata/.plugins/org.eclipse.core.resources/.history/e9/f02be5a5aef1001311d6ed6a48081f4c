@@ -1,0 +1,19 @@
+package ch3_Grade;
+
+import javax.swing.JOptionPane;
+
+public class Dialog {
+
+	public static void main (String [] Args){
+		
+		//display a dialog with a message
+		
+		JOptionPane.showMessageDialog(null, "Welcome to:\nJava!");
+		
+		String in = null;
+		JOptionPane.showInputDialog(in);
+		
+		JOptionPane.showMessageDialog(null, in);
+		
+	}
+}

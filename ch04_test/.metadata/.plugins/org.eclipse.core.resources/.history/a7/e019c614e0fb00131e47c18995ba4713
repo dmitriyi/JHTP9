@@ -1,0 +1,9 @@
+package ch04_test;
+
+public class CreditProcess {
+	private int iAccountNumber, iBeginBalance, iTotalCarged, iCredits;
+	public CreditProcess (){
+		
+		
+	}
+}

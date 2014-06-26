@@ -1,0 +1,10 @@
+package ch3_Grade;
+
+// Class declaration with one method
+
+
+public class GradeBook {
+	public void   displayMessage( String courseName, int yearC ){
+		System.out.printf("Welcome to the Grade Book for\n%s!\n Year %s", courseName, yearC );
+}
+}

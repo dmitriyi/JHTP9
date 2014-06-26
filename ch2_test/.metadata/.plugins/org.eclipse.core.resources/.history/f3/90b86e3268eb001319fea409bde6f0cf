@@ -1,0 +1,27 @@
+package ch2_Me_Print;
+import java.util.Scanner;
+
+
+public class Addition {
+public static void main (String[] args){
+	Scanner input = new Scanner( System.in);
+	int number1;
+	int number2;
+	int sum;
+	
+	System.out.print("Enter First Integer: ");
+	number1 = input.nextInt();
+		
+	System.out.print("Enter second Integer: ");
+	number2 = input.nextInt();
+	
+	
+	sum = number1 + number2;
+	System.out.printf("Sum is: ", sum);
+//	System.out.print("Sum is: ");
+//	System.out.print(sum);
+
+	// this calculator is buggy - inputing non Int will result in crash
+	// "input" variable is never killed causing a memory leak!
+	}
+}

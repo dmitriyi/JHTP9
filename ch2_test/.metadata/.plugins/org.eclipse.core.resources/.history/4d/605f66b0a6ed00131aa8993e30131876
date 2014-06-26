@@ -1,0 +1,11 @@
+package ch2_Me_Print;
+
+public class Excersize31 {
+	public static void main (String [] args){
+		int num, x;
+		num = x + 1;
+				
+		System.out.printf(arg0, arg1)
+		
+	}
+}

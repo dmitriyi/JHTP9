@@ -1,0 +1,15 @@
+package ch04_test;
+
+public class Analysis {
+	public static void main (){
+		
+		int pass = 0;
+		int fail = 0;
+		int studentCounter = 1;
+		
+		while (studentCounter <=10){
+			System.out.print("Enter Result:");
+			
+		}
+	}
+}

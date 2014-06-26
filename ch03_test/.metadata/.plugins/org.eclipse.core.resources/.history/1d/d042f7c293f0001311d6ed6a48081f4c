@@ -1,0 +1,25 @@
+package ch3_Grade;
+
+// Class declaration with one method
+
+
+public class GradeBook {
+	private String courseName; //Course name declaration
+	
+	public GradeBook (String name) {
+		courseName = name;
+	}
+	
+	public void setCourseName (String name){ // Method to SET the courseName
+		courseName = name; // Store the course name
+	}
+	public String getCourseName (){  // Method to retrieve the course name
+		return courseName;
+	}
+	
+	public void   displayMessage(  ){ // Welcome display message method
+		
+		// Calls the getCourseName to get the name of the course
+		System.out.printf("Welcome to the Grade Book for\n%s!\n", getCourseName() );
+}
+}

@@ -1,0 +1,30 @@
+package ch2_Me_Print;
+import java.util.Scanner;
+
+public class Compare {
+	public static void main (String[] args){
+		Scanner input = new Scanner(System.in);
+		int number1,
+		number2;
+		
+		System.out.print("Enter firts integer: ");
+		number1 = input.nextInt();
+		
+		System.out.print("Enter second integer: ");
+		number2 = input.nextInt();
+		
+		if (number1 == number2 )
+			System.out.printf("%d == %d\n", number1, number2);
+		if (number1 != number2 )
+			System.out.printf("%d != %d\n", number1, number2);
+		if (number1 < number2 )
+			System.out.printf("%d < %d\n", number1, number2);
+		if (number1 > number2 )
+			System.out.printf("%d > %d\n", number1, number2);
+		if (number1 <= number2 )
+			System.out.printf("%d <= %d\n", number1, number2);
+		if (number1 >= number2 )
+			System.out.printf("%d >= %d\n", number1, number2);
+	}
+	
+}

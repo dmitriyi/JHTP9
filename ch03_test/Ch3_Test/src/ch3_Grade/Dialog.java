@@ -1,0 +1,17 @@
+package ch3_Grade;
+
+import javax.swing.JOptionPane;
+
+public class Dialog {
+
+	public static void main (String [] Args){
+		
+
+		String name = JOptionPane.showInputDialog("What is your Name?");
+		String quest = JOptionPane.showInputDialog("What is your quest?");
+		
+		String message = String.format("Welcome %s to %s", name, quest);
+		//display a dialog with a message
+		JOptionPane.showMessageDialog(null, message);
+	}
+}

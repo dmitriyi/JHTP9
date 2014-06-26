@@ -1,0 +1,28 @@
+package ch04_test;
+
+import javax.swing.JOptionPane;
+
+public class CreditLimitCalculator {
+
+	public static void main(String[] args) {
+		int iAccountNumber, 
+		iBeginBalance, 
+		iTotalCharged, 
+		iCredits, 
+		iCreditLimit,
+		quit = 0;
+		
+		JOptionPane.showMessageDialog(null, "Welcome!", "This Application will calculate \nwhether any of several department-store customers\nhas exceeded the credit limit on a charge account.", JOptionPane.INFORMATION_MESSAGE);
+		
+		while (quit != 1){
+			String sAccountNumber = JOptionPane.showInputDialog("Please Enter the Account Numner:");
+				if (sAccountNumber .equals("quit")){
+					iAccountNumber = Integer.parseInt(sAccountNumber);
+					JOptionPane.showInputDialog("Plese enter the ");
+					
+				}
+		}
+
+	}
+
+}

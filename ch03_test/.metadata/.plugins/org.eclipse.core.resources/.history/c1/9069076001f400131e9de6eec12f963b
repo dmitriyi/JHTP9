@@ -1,0 +1,53 @@
+package ch3_Grade;
+
+// (Date Class) Create a class called Date that includes three instance variables 
+// a month (type int), a day (type int) and a year (type int). Provide a constructor that
+// initializes the three instance variables and assumes that the values provided are correct.
+// Provide a set and a get method for each instance variable.Provide a method displayDate that 
+// displays the month, day and year separated by for- ward slashes (/).
+// Write a test application named DateTest that demonstrates class Date’s capabilities.
+
+public class Date {
+
+	private int yearD;
+	private int monthD;
+	private int dayD;
+
+	public Date(int year, int month, int day) {
+		yearD = year;
+		monthD = month;
+		dayD = day;
+	}
+
+	public int getYearD() {
+		return yearD;
+	}
+
+	public void setYearD(int yearD) {
+		this.yearD = yearD;
+	}
+
+	public int getMonthD() {
+		return monthD;
+	}
+
+	public void setMonthD(int monthD) {
+		this.monthD = monthD;
+	}
+
+	public int getDayD() {
+		return dayD;
+	}
+
+	public void setDayD(int dayD) {
+		this.dayD = dayD;
+	}
+
+	public void displayDate (){
+		System.out.printf("%s,%s,%s", getDayD(),getMonthD(), getYearD());
+		
+		{
+	}
+	
+	
+}

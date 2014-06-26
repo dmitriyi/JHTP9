@@ -1,0 +1,13 @@
+package ch2_Me_Print;
+
+public class Excersize31 {
+	public static void main (String [] args){
+		int num, x;
+		x = 0;
+		num = num + x + 1;
+		
+				
+		System.out.printf("Number    Square    Cube", num);
+		
+	}
+}

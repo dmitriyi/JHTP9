@@ -1,0 +1,29 @@
+package ch2_Me_Print;
+import java.util.Scanner;
+
+public class excersize16 {
+	public static void main (String[] args) {
+		Scanner input = new Scanner(System.in);
+		int n1,
+		n2;
+		
+		System.out.print("Enter First Int: ");
+			n1 = input.nextInt();
+			
+		System.out.print("Enter Second Int: ");
+			n2 = input.nextInt();
+		
+		if (n1 == n2) { //Determine Equality!
+			System.out.printf("%d and %d are equal", n1, n2);
+		}
+			
+		if (n1 != n2) { //When not equals then:
+			if (n1 > n2){ 
+				System.out.printf("%d is greater then %d", n1, n2);
+			}
+			else {
+				System.out.printf("%d is greater then %d", n2, n1);
+			}
+			}
+	}
+}

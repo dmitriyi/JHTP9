@@ -1,0 +1,20 @@
+package ch3_Grade;
+
+
+public class Account {	
+
+	private double balance;
+	
+	public Account (double initBalance){
+		
+		if (initBalance > 0.0)
+			balance = initBalance;
+	}
+		public void credit ( double ammount )	{
+			balance = balance + ammount;
+		}
+		
+		public double getBalance (){
+			return balance;
+		}
+}

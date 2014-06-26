@@ -1,0 +1,83 @@
+package ch3_Grade;
+
+import javax.swing.JOptionPane;
+
+// (Employee Class) Create a class called Employee that includes three instance variables 
+// a first name (type String), a last name (type String) and a monthly salary (double). 
+// Provide a constructor that initializes the three instance variables.
+// Provide a set and a get method for each instance variable. If the monthly salary 
+// is not positive, do not set its value. Write a test application named EmployeeTest 
+// that demonstrates class Employee’s capabilities. Create two Employee objects and 
+// display each object’s yearly salary. Then give each Employee a 10% raise and 
+// display each Employee’s yearly salary again.
+
+public class Employee { // Begin
+	//Fields
+	private String firstN;
+	private String lastN;
+	private double salary;
+//	private int raise;
+	private double ySalary;
+	private double upSalary;
+
+	// Constructor!
+	public Employee(String first, String last, double mSala) {
+		firstN = first;
+		lastN = last;
+		if (mSala < 0.0) {
+			JOptionPane.showMessageDialog(null, "Invalid Salary");
+		} else {
+			salary = mSala;
+		}
+
+	}
+
+	
+	public String getFirstN() {
+		return firstN;
+	}
+
+	public void setFirstN(String firstN) {
+		this.firstN = firstN;
+	}
+
+	public String getLastN() {
+		return lastN;
+	}
+
+	public void setLastN(String lastN) {
+		this.lastN = lastN;
+	}
+
+	public double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+
+	public double getySalary() {
+		return ySalary;
+	}
+
+	public void setySalary() {
+		ySalary = salary * 12;
+	}
+	public double getUpSalary() {
+		return upSalary;
+	}
+
+	public void setUpSalary() {
+		upSalary = (ySalary / 100) * 10;
+	}
+	
+	public void printResults (){
+		System.out.printf("Employee %s %s will recieve 10 percent raise to theit yearly salary of: %.2f", getFirstN(),getLastN(),getySalary());
+		System.out.printf("New yearly salary will be: %.2f", getUpSalary());
+		
+		
+	}
+
+	
+} // End

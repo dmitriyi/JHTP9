@@ -1,0 +1,16 @@
+package ch04_test;
+
+public class SalesCommissionCalculator {
+	public static void main (String [] args){
+		double newItem,
+		total = 0,
+		item1 = 239.99,
+		item2 = 129.75,
+		item3 = 99.95,
+		item4 = 350.89;
+		int quit = 0;
+		
+		System.out.printf("Welcome to the Sales Commission Calculator!\nIt will calulate the sales person's weekly\nearnings based on the commision.");
+		
+	}
+}

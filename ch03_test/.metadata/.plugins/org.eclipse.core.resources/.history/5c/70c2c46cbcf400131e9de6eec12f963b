@@ -1,0 +1,30 @@
+package ch3_Grade;
+
+// Write a Java application that prompts for the person’s information, 
+//instantiates an object of class HeartRates and prints the information from that object 
+//including the person’s first name, last name and date of birth then calculates and prints 
+//the person’s age in (years), maximum heart rate and target-heart-rate range.
+import javax.swing.JOptionPane;
+
+public class HearRateCalculator {
+	public static void main (String [] args){
+		String first = JOptionPane.showInputDialog("Please Enter your first Name:");
+		String last = JOptionPane.showInputDialog("Please Enter your last Name:");
+		String bDay = JOptionPane.showInputDialog("Please Enter your Birth Date day:");
+		int day = Integer.parseInt(bDay);
+		String bMonth = JOptionPane.showInputDialog("Please Enter your Birth Date month:");
+		int month = Integer.parseInt(bMonth);
+		String bYear = JOptionPane.showInputDialog("Please Enter your Birth Date year:");
+		int year = Integer.parseInt(bYear);
+		
+		HeartRate heartRate1 = new HeartRate(first, last, day, month, year);
+		
+		heartRate1.setAge();
+		heartRate1.setMaxRate();
+		heartRate1.setMinTrag();
+		heartRate1.setMaxTrag();
+		  
+		System.out.printf("%s %s, Birth date: %s/%s/%s, Age: %s \n Maximum Heart Rate: %s, Target heart rate Range is : %s - %s",
+				heartRate1.getFirstN(), heartRate1.getLastN(),heartRate1.getDay(),heartRate1.getMonth(),heartRate1.getYear(),heartRate1.getAge(),heartRate1.getMaxRate(), heartRate1.getMinTrag(), heartRate1.getMaxTrag());
+	}
+}

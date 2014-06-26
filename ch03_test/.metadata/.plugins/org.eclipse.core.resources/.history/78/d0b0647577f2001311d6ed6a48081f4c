@@ -1,0 +1,45 @@
+package ch3_Grade;
+
+import java.util.Scanner;
+
+// Driver Class
+public class AccountTest {
+	public static void main (String[] args){
+	
+		Account account1 = new Account( 50.00 ); // Creating account Objects!
+		Account account2 = new Account( -7.53 );
+		
+		// GET initial balances and print them
+		System.out.printf("account1 (Var) balance: $%.2f\n",
+				account1.getBalance());
+		System.out.printf("account2 (Var) balance: $%.2f\n",
+				account2.getBalance());
+
+		
+		Scanner in = new Scanner(System.in); 
+		double depositAmmount; //Deposit amount read from user
+		System.out.print("Enter deposit amoutn for account1: ");
+		depositAmmount = in.nextDouble();
+		System.out.printf("\nadding $%.2f to account1 balance \n\n", depositAmmount);
+		account1.credit(depositAmmount); //add to account1
+		
+		System.out.printf("account1 balance: $%.2f\n", account1.getBalance());
+		System.out.printf("account2 balance: $%.2f\n", account2.getBalance());
+		
+		System.out.print("Enter deposit amoutn for account2: ");
+		depositAmmount = in.nextDouble();
+		System.out.printf("\nadding $%.2f to account1 balance \n\n", depositAmmount);
+		account2.credit(depositAmmount); //Add to account2
+		
+		System.out.printf("account1 balance is $%.2f\n", account1.getBalance());
+		System.out.printf("account2 balance is $%.2f\n", account2.getBalance());
+	
+		double withdrawAmmount;
+		
+		System.out.print("Enter the withdrawal ammount: ");
+		withdrawAmmount = in.nextDouble();
+		account1.debit(withdrawAmmount);
+		System.out.printf("account1 balance is $%.2f\n", account1.getBalance());
+	
+	}
+}

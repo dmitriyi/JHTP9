@@ -1,0 +1,11 @@
+package ch2_Me_Print;
+
+import java.util.Scanner;
+
+public class excersize8 {
+
+	public static void main (String[] args){
+		System.out.println("Enter an interer: ");
+	
+	}
+}

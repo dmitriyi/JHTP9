@@ -1,0 +1,24 @@
+package ch04_test;
+
+import java.awt.Graphics;
+import javax.swing.JPanel;
+
+public class DrawPanel extends JPanel{
+	public void paintComponent (Graphics g) {
+		super.paintComponent(g);
+		
+		int width = getWidth();
+		int height = getHeight();
+		int iLineCounter = 1;
+		
+		while (iLineCounter <= 15){
+			g.drawLine(0, 0, width, height);
+			iLineCounter++;
+			width += 100;
+			height += 100;
+			
+		}
+//		g.drawLine(0, height, width, 0);
+	}
+	
+}

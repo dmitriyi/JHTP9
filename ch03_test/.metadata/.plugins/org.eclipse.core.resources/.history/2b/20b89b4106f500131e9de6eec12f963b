@@ -1,0 +1,60 @@
+package ch3_Grade;
+
+import javax.swing.JOptionPane;
+
+// You’ll design a “starter” HealthProfile class for a person. The class attributes should 
+// include the person’s first name, last name, gender, date of birth (consisting of separate
+// attributes for the month,day and year of birth),height(in inches)and weight(in pounds).
+// Your class should have a constructor that receives this data. For each attribute, provide
+// set and get methods. The class also should include methods that calculate and return the user’s 
+// age in years, maximum heart rate and target-heart-rate range (see Exercise 3.16), and body mass 
+// index (BMI; see Exercise 2.33). Write a Java application that prompts for the person’s 
+// information, instantiates an object of class HealthProfile for that person and prints the 
+// information from that object including the person’s first name,last name,gender,date of birth,
+// height and weigh then calculates and prints the person’s age in years,BMI,maximum heart rate 
+// and target-heart-rate range. It should also display the BMI values chart from Exercise 2.33
+
+public class HealthProfile {
+	public static void main (String [] args){
+	
+		//Getting The Client Info
+	String firstN = JOptionPane.showInputDialog("Please enter client's First Name: ");
+	String lastN = JOptionPane.showInputDialog("Please enter client's Last Name: ");
+	String gender = JOptionPane.showInputDialog("Please enter client's Gender: ");
+	String dayStr = JOptionPane.showInputDialog("Please enter client's birthday Day: ");
+		int day = Integer.parseInt(dayStr);
+	String monthStr = JOptionPane.showInputDialog("Please enter client's birthday Month: ");
+		int month = Integer.parseInt(monthStr);
+	String yearStr = JOptionPane.showInputDialog("Please enter client's birthday Year: ");
+		int year = Integer.parseInt(yearStr);
+	String heightStr = JOptionPane.showInputDialog("Please enter client's Height (in cm): ");
+		int height = Integer.parseInt(heightStr);
+	String weightStr = JOptionPane.showInputDialog("Please enter client's Weight (in kg): ");
+		int weight = Integer.parseInt(weightStr);
+	// No real validation here as it requires a better knowledge of the loops!
+		
+		//Working with HeartRate Class
+	HeartRate clientH1 = new HeartRate(year);
+	clientH1.setAge();
+	clientH1.setMaxRate();
+	clientH1.setMaxTrag();
+	clientH1.setMinTrag();
+	
+		 //Working with Bmi_class class
+	Bmi_Class clientB1 = new Bmi_Class(height, weight);	
+	clientB1.setBmi();
+	clientB1.setBmiType();
+	
+	
+		//Output
+	System.out.printf("Client Information:\nName %s %s\n", firstN, lastN);
+	System.out.printf("Gender: %s\nDate Of Birth: %s/%s/%s\n", gender, day, month, year);
+	System.out.printf("Approximate	Age: %s\n", clientH1.getAge());
+	System.out.printf("Height: %s\nWeight: %s\n", height, weight);
+	System.out.printf("BMI: %s, you are in \"%s\" BMI Type\n", clientB1.getBmi(), clientB1.getBmiType());
+	System.out.printf("Maximum Heart Rate: %s\nTarget Hert Rate Range: %s - %s\n", clientH1.getMaxRate(),clientH1.getMinTrag(),clientH1.getMaxTrag());
+	System.out.println(clientB1.bmiOut());
+		
+	
+	} // End Main
+} // End Class

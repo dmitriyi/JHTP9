@@ -1,0 +1,23 @@
+package ch2_Me_Print;
+// Write an application that inputs one number consisting 
+// of five digits from the user, separates the number 
+// into its individual digits and prints the digits 
+// separated from one another by three spaces each.
+import java.util.Scanner;
+
+public class Excersize30 {
+	public static void main (String [] args){
+		Scanner in = new Scanner(System.in);
+		int n1, len, num, rem;
+		
+		System.out.printf("Enter a 5 digit number: ");
+			n1 = in.nextInt();
+			len = String.valueOf(n1).length();
+			if (len == 5){
+				num = n1 / 10000;
+				System.out.printf("%d", num);
+			} else {
+				System.out.print("Incorrrect Number length!");
+			}			
+	}
+}

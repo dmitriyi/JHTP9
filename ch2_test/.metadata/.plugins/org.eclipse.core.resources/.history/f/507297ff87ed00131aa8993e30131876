@@ -1,0 +1,15 @@
+package ch2_Me_Print;
+
+import java.util.Scanner;
+
+public class Excersize30 {
+	public static void main (String [] args){
+		Scanner in = new Scanner(System.in);
+		int n1;
+		
+		System.out.printf("Enter a number: ");
+			n1 = in.nextInt();
+		
+		
+	}
+}

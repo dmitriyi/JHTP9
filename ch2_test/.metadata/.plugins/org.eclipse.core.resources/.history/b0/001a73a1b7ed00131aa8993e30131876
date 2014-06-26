@@ -1,0 +1,10 @@
+package ch2_Me_Print;
+//Write a program that inputs five numbers and deter- minesandprintsthenumberofnegativenumbersinput,thenumberofpositivenumbersinputand the number of zeros input. 
+import java.util.Scanner;
+
+public class Excersize32 {
+ public static void main (String [] args){
+	 Scanner in = new Scanner (System.in);
+	 
+ }
+}

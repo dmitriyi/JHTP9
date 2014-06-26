@@ -1,0 +1,34 @@
+package ch3_Grade;
+
+import javax.swing.JOptionPane;
+
+public class InvoiceTest {
+	public static void main (String [] args){
+		
+		// Request Part # and assign in to inNumber
+		String inNumber = JOptionPane.showInputDialog("Enter the part #: ");
+		
+		// Request Part Description and assign in to inDescription
+		String inDescription = JOptionPane.showInputDialog("Enter the part Desription: ");
+		
+		// Request Quantity, convert and assign it to 
+		String inQuantity = JOptionPane.showInputDialog("Enter the quantity of the item being purchased: ");
+		int intQuantity = Integer.parseInt (inQuantity);
+		
+		String inCost = JOptionPane.showInputDialog("Enter the price part: ");
+		double dCost = Double.parseDouble (inCost);
+				
+		Invoice invoice1 = new Invoice(inNumber, inDescription, intQuantity, dCost);
+		
+		
+		Invoice.printInvoice ();
+		
+		
+		
+//		System.out.printf("#%s - %s - %s - %.2f = %.2f",Invoice.getPartNumber() ,inDescription, inQuantity,dCost, outInvoice);
+		
+		// System.out.printf("gradeBook1 variable is: %s\n", gradeBook1.getCourseName());
+		
+		//invoice1.printInvoice();
+	}
+}

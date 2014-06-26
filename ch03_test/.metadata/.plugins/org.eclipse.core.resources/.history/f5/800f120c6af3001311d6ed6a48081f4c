@@ -1,0 +1,25 @@
+package ch3_Grade;
+
+import javax.swing.JOptionPane;
+
+public class EmployeeDriver {
+	public static void main (String [] args){
+	
+		String name1_1 = JOptionPane.showInputDialog("Plese enter the First Name of the first employee");
+		String name2_1 = JOptionPane.showInputDialog("Plese enter the Last Name of the first employee");
+		
+		
+		String mSalStr_1 = JOptionPane.showInputDialog("Plese enter the monthly Salary of the first employee");
+		double mSal_1 = Double.parseDouble(mSalStr_1);
+		
+		Employee employee1 = new Employee(name1_1, name2_1, mSal_1);
+		employee1.setSalary(mSal_1);
+		
+		double nameF = employee1.getySalary();
+		System.out.print(nameF);
+//		employee1.printResults();
+		
+		
+		
+	}
+}

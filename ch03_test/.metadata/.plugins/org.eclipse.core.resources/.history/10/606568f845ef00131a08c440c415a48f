@@ -1,0 +1,18 @@
+package ch3_Grade;
+
+import java.util.Scanner;
+
+public class GradeBookTest { //Is our Driver Class
+	public static void main (String [] args){
+		GradeBook myGradeBook = new GradeBook();	// Created GradeBook Object and assigned it to MyGradeBook Variable
+		Scanner in = new Scanner(System.in);
+	
+	System.out.println("Plese enter the name of the course: ");
+		String nameOfCourse =in.nextLine();
+	System.out.print("Plese enter year");	
+		 year = in.nextInt();
+	myGradeBook.displayMessage( nameOfCourse, year  );
+		
+	}
+}
+ 

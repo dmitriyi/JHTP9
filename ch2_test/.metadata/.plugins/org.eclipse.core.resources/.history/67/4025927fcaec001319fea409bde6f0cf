@@ -1,0 +1,40 @@
+package ch2_Me_Print;
+// (Arithmetic, Smallest and Largest) Write an application that inputs three integers 
+// from the user and displays the sum, average, product, smallest and largest of the numbers. 
+// Use the techniques shown in Fig. 2.15. [Note: The calculation of the average 
+// in this exercise should result in an integer representation of the average. 
+// So, if the sum of the values is 7, the average should be 2, not 2.3333….] 
+
+import java.util.Scanner;
+
+public class excersize17 {
+	
+	public static void main (String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		int n1, 
+		n2,
+		n3, // Three Integers
+		sum, // Sum
+		average, // Average of 3
+		prod; // Multiplication of 3
+		
+		//Initialization of number variables:
+	System.out.print("Enter First Number: ");
+		n1 = input.nextInt();
+	System.out.print("Enter Second Number: ");
+		n2 = input.nextInt();
+	System.out.print("Enter Third Number: ");
+		n3 = input.nextInt();	
+		
+		sum = n1 + n2 + n3;
+		average = sum/3;
+		prod = n1 * n2 * n3;
+		
+		System.out.printf("Sum is: %d ", sum);
+		System.out.printf("Average is: %d ", average);
+		System.out.printf("Product is: %d ", prod);
+		
+		
+	}
+}

@@ -1,0 +1,13 @@
+package ch04_test;
+
+public class GasMilage {
+	private int distance;
+	private int gas;
+	
+	public GasMilage (int distanceM, int gasG){
+		distanceM = distance;
+		gasG = gas;		
+	}
+	
+	
+}

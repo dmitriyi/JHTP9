@@ -1,0 +1,14 @@
+package ch3_Grade;
+
+public class Account {
+
+	private double balnce;
+	
+	public Account (double initBalance){
+		
+		if (initBalance > 0.0){
+			balance = initBalance;
+		}
+	}
+	
+}

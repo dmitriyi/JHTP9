@@ -1,0 +1,29 @@
+package ch3_Grade;
+
+import javax.swing.JOptionPane;
+
+public class InvoiceTest {
+	public static void main (String [] args){
+		
+		String inNumber = JOptionPane.showInputDialog("Enter the part #: ");
+		
+		String inDescription = JOptionPane.showInputDialog("Enter the part Desription: ");
+		
+		String inQuantity = JOptionPane.showInputDialog("Enter the quantity of the item being purchased: ");
+		int intQuantity = Integer.parseInt (inQuantity);
+		
+		String inCost = JOptionPane.showInputDialog("Enter the price part: ");
+		
+		double dCost = Double.parseDouble (inCost);
+		
+		double outInvoice = 0.0;
+		
+		Invoice invoice1 = new Invoice(inNumber, inDescription, intQuantity, dCost, outInvoice);
+		
+		JOptionPane.showMessageDialog(null, invoice1.getPartNumber());
+		
+		// System.out.printf("gradeBook1 variable is: %s\n", gradeBook1.getCourseName());
+		
+		//invoice1.printInvoice();
+	}
+}

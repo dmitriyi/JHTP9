@@ -1,0 +1,8 @@
+package ch2_Me_Print;
+
+public class Excersize29 {
+	public static void main (String [] args){
+		System.out.printf("Character %c has int value of %d\n", 'B', ((int)'B'));
+		
+	}
+}

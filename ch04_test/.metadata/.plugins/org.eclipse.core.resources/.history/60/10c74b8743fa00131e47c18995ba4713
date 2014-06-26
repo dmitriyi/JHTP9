@@ -1,0 +1,31 @@
+import java.awt.*;
+import java.applet.Applet;
+import java.awt.event.*; 
+
+public class GridDrawingApplet extends Applet {
+
+  public void paint (Graphics g) 
+  {
+    // Draw the vertical lines:
+    g.drawLine (0,0, 0,240);
+    g.drawLine (30,0, 30,240);
+    g.drawLine (60,0, 60,240);
+    g.drawLine (90,0, 90,240);
+    g.drawLine (120,0, 120,240);
+    g.drawLine (150,0, 150,240);
+    g.drawLine (180,0, 180,240);
+    g.drawLine (210,0, 210,240);
+    g.drawLine (240,0, 240,240);
+    
+    // Draw the horizontal lines:
+    g.drawLine (0,0, 240,0);
+    g.drawLine (0,30, 240,30);
+    g.drawLine (0,60, 240,60);
+    g.drawLine (0,90, 240,90);
+    g.drawLine (0,120, 240,120);
+    g.drawLine (0,150, 240,150);
+    g.drawLine (0,180, 240,180);
+    g.drawLine (0,210, 240,210);
+    g.drawLine (0,240, 240,240);
+  }
+}

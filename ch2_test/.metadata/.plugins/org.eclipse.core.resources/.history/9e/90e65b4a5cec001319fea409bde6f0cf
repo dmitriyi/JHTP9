@@ -1,0 +1,25 @@
+package ch2_Me_Print;
+
+//This program will preform a payroll calculations
+import java.util.Scanner;
+
+public class excersize8 {
+
+	public static void main (String[] args){
+		Scanner input = new Scanner(System.in);
+		
+		int a,
+		b,
+		c;
+		
+		System.out.println("Enter an interer: ");
+		b = input.nextInt();
+		
+		System.out.println("Enter an second: ");
+		c = input.nextInt();
+		
+		a = b * c;
+		System.out.print(a);
+	
+	}
+}

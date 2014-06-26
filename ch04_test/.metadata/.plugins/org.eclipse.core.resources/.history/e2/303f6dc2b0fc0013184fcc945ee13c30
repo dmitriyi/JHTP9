@@ -1,0 +1,29 @@
+package ch04_test;
+import java.util.Scanner;
+public class SalesCommissionCalculator {
+	public static void main (String [] args){
+		double newItem,
+		total = 0,
+		item1 = 239.99,
+		item2 = 129.75,
+		item3 = 99.95,
+		item4 = 350.89;
+		int quit = 0;
+		String sNew;
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.printf("Welcome to the Sales Commission Calculator!\nIt will calulate the sales person's weekly\nearnings based on the commision.\n");
+		System.out.printf("Items sold this week:\nItem 1: %.2f\nItem 2: %.2f\nItem 3: %.2f\nItem 4: %.2f\n",
+				item1, item2, item3, item4);
+		while (quit != 1 ){
+			System.out.printf("Plese enter Item # or type \"quit\" to exit");
+				sNew = input.nextLine();
+				if (sNew.equals("quit"))
+						quit = 1;
+			
+		}
+		
+	}
+}
+//System.out.printf();

@@ -1,0 +1,38 @@
+package ch3_Grade;
+
+import javax.swing.JOptionPane;
+//import java.util.Scanner;
+
+public class GradeBookTest { //Is our Driver Class
+	
+	public static void main (String [] args){
+		
+
+		String inCourse =
+				JOptionPane.showInputDialog("Plese enter the name of the course: ");
+		
+		String inName = 
+				JOptionPane.showInputDialog("Please Enter the Name of the Instructor: ");
+		
+		
+		
+		
+		
+//		GradeBook gradeBook1 = new GradeBook("CS101 Intro to Java Programming", "Vasiliy P");	// Created GradeBook Object and assigned it to MyGradeBook Variable
+//		GradeBook gredeBook2 = new GradeBook("CS102 Data Structures in Java", "Passiliy V"); // Sets the name into the initial value of courseName in Grade Book Class
+//		
+//		System.out.printf("gradeBook1 variable is: %s\n", gradeBook1.getCourseName());
+//		System.out.printf("gradebook2 variable is: %s\n", gredeBook2.getCourseName());
+//				Scanner in = new Scanner(System.in);	
+// Display the initial value of the courseName
+//		System.out.printf("Initial course name is: %s\n\n", myGradeBook.getCourseName());		
+		
+		
+//		myGradeBook.setCourseName( theName );
+//		System.out.println();
+//		
+//		
+//		myGradeBook.displayMessage();		
+	}
+}
+ 
